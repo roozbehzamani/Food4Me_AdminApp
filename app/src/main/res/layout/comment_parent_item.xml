@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layoutDirection="rtl"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="20dp"
+    android:background="@color/imageButtonSelected"
+    android:elevation="2dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:layout_margin="10dp"
+        android:id="@+id/arrow"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:gravity="center"
+        android:layout_toLeftOf="@id/arrow"
+        android:layout_centerVertical="true"
+        android:text="نام"
+        android:textSize="16sp"
+        android:textColor="@color/startblue"
+        android:padding="16dp"
+        android:id="@+id/txtCommentName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>
+

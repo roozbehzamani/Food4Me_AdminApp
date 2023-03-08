@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/imageButtonSelected"
+    android:weightSum="9.9"
+    android:layoutDirection="rtl"
+    tools:context="com.example.shabnam.serverapp.FoodInfoActivity">
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtfoodname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:hint="نام غذا"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            />
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtfoodcost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:hint="قیمت"
+            android:inputType="number"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:weightSum="2"
+        android:layout_weight=".8"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+        <org.angmarch.views.NiceSpinner
+            android:id="@+id/spTypeFood"
+            android:textColorHint="@color/base"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <EditText
+            android:layout_weight="1"
+            android:id="@+id/edtTimeFood"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="@android:color/white"
+            android:gravity="right"
+            android:hint="زمان پخت"
+            android:inputType="textPersonName"
+            android:maxLength="11"
+            android:padding="10dp"
+            android:textCursorDrawable="@null"
+            android:textSize="18dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_weight="1.5"
+        android:id="@+id/edtCreatMatrialFood"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:gravity="right"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:hint="مواد تشکیل دهنده"
+        android:inputType="textPersonName"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        />
+
+
+
+    <EditText
+        android:layout_weight="4"
+        android:id="@+id/edtMakeFood"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/white"
+        android:gravity="right"
+        android:hint="طرز تهیه"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:maxLines="6"
+        android:padding="10dp"
+        android:textCursorDrawable="@null"
+        android:textSize="18dp"
+        />
+
+
+
+
+<LinearLayout
+    android:layout_margin="10dp"
+    android:layout_gravity="center_horizontal"
+    android:weightSum="3"
+    android:layout_weight="1"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="0dp">
+
+
+
+
+
+
+    <Button
+
+        android:layout_weight="1.4"
+        android:id="@+id/btnUpLoad"
+        android:textColor="@color/startblue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_iconfinder_upload"
+        android:background="@drawable/sweet_btn_shape"
+        android:textSize="18sp"
+        android:text="آپلود عکس"/>
+    <RelativeLayout
+        android:layout_weight=".2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"></RelativeLayout>
+    <Button
+
+        android:layout_weight="1.4"
+        android:id="@+id/btnOption"
+        android:textColor="@color/startblue"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/ic_switch"
+        android:background="@drawable/sweet_btn_shape"
+        android:textSize="18sp"
+        android:text="تغییرات"/>
+
+
+
+
+
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        android:weightSum="3"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+
+
+        <Button
+           android:layout_weight="2.991"
+            android:id="@+id/btnsave"
+            android:textColor="@color/startblue"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/ic_save_file"
+            android:drawableLeft="@drawable/ic_save_file"
+            android:background="@drawable/sweet_btn_shape"
+            android:textSize="18sp"
+            android:text="ذخیره"/>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

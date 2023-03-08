@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:background="@color/btnSignUp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="140dp"
+    android:layout_margin="5dp"
+    android:layoutDirection="rtl"
+    android:weightSum="2.8">
+
+
+    <LinearLayout
+       android:layout_margin="5dp"
+        android:weightSum="4"
+        android:layout_weight="1.1"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:id="@+id/txt_factorId"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:hint="شماره فاکتور"
+            android:textColor="@color/startblue" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txtOrderDate"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:hint="تاریخ"
+            android:textColor="@color/startblue" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txtOrderTime"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:hint="ساعت"
+            android:textColor="@color/startblue"/>
+
+        <TextView
+            android:gravity="center"
+            android:background="@color/white"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:id="@+id/txtPrice"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:hint="قیمت"
+            android:textColor="@color/startblue" />
+
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_weight="1.2"
+        android:layout_width="150dp"
+        android:layout_height="0dp">
+
+
+
+
+
+
+        <org.angmarch.views.NiceSpinner
+
+            android:gravity="center"
+            android:id="@+id/txtOrderStatus"
+            android:textColorHint="@color/base"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:gravity="center"
+        android:layout_weight=".35"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/transparent">
+
+        <ImageView
+            android:id="@+id/arrow"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_margin="16dp" />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_weight=".15"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@android:color/white"/>
+
+
+
+
+
+</LinearLayout>

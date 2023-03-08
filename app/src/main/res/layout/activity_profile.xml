@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="6"
+    android:layoutDirection="rtl"
+    tools:context=".ProfileActivity"
+  >
+    <LinearLayout
+        android:weightSum="10.6"
+        android:orientation="vertical"
+
+        android:layout_weight=".8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/startblue"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></RelativeLayout>
+        <RelativeLayout
+            android:background="#36c39a58"
+            android:layout_weight="6.6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4.4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layoutDirection="rtl"
+        tools:context=".ProfileActivity"
+        android:weightSum="10.4"
+        android:background="#36c39a58">
+
+        <RelativeLayout
+            android:background="@color/graylight"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:background="@color/startblue"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:layout_marginTop="-25dp"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/imgProfileImage"
+                    android:src="@drawable/editfooooood"
+                    android:scaleType="centerCrop"
+                    app:riv_corner_radius="30dip"
+                    app:riv_border_width="4dip"
+                    app:riv_border_color="#fff"
+                    app:riv_oval="true"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"/>
+
+                <TextView
+                    android:id="@+id/txtResName"
+                    android:textAlignment="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@android:color/transparent"
+                    android:gravity="right"
+                    android:hint="نام رستوران"
+                    android:padding="10dp"
+                    android:textSize="20dp" />
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="-35dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <LinearLayout
+
+                android:gravity="center_horizontal"
+                android:weightSum="4.2"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/btntype_res"
+                    android:background="@color/graylight"
+                    android:layout_weight="1.4"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_menu"
+                    android:text="نوع رستوران"/>
+
+                <Button
+                    android:background="@color/graylight"
+                    android:layout_weight="1.4"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_security_black_24dp"
+                    android:text="تغییر رمز"
+                    android:id="@+id/nav_change_password"/>
+
+                <Button
+                    android:id="@+id/navAboutUs"
+                    android:background="@color/graylight"
+                    android:layout_weight="1.4"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent"
+                    android:drawableTop="@drawable/ic_info"
+                    android:text="درباره ما"/>
+
+
+
+
+
+            </LinearLayout>
+
+
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+        </LinearLayout>
+
+
+        <LinearLayout
+
+            android:background="@android:color/white"
+            android:layout_weight="3.2"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:weightSum="3.55"
+            android:layout_height="0dp">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.35">
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+                <ImageView
+                    android:src="@drawable/ic_email"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:gravity="left"
+                        android:textDirection="ltr"
+                        android:id="@+id/edtEmail"
+                        android:textSize="17sp"
+                        android:layout_gravity="left"
+                        android:text="moazamshabnam@gmail.com"
+                        android:paddingLeft="20dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+
+                <ImageView
+                    android:src="@drawable/ic_phone_android"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+                    <TextView
+                        android:textAlignment="center"
+                        android:id="@+id/txtPhone"
+                        android:textSize="18sp"
+                        android:layout_gravity="right"
+                        android:text="0396868989"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8">
+
+                <ImageView
+                    android:src="@drawable/ic_namesignup"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+
+
+                    <EditText
+                        android:textAlignment="center"
+                        android:id="@+id/Edt_name"
+                        android:layout_gravity="right"
+                        android:text="نام"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:textSize="18dp"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.65">
+
+                <ImageView
+                    android:src="@drawable/ic_respin"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_horizontal">
+
+
+                    <EditText
+                        android:textAlignment="center"
+                        android:id="@+id/Edt_address"
+                        android:layout_gravity="right"
+                        android:text="ادرس"
+                        android:maxLines="2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@android:color/transparent"
+                        android:gravity="right"
+                        android:padding="10dp"
+                        android:textSize="18dp"/>
+
+                </RelativeLayout>
+
+
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.25">
+
+
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/btsSaveChanges"
+            android:layout_weight=".6"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textStyle="bold"
+            android:background="#C39a58"
+            android:text="     ذخیره     "
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp" />
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:weightSum="10.6"
+        android:orientation="vertical"
+
+        android:layout_weight=".8"
+        android:layout_width="0dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:background="@color/startblue"
+            android:layout_weight="4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></RelativeLayout>
+        <RelativeLayout
+            android:background="#36c39a58"
+            android:layout_weight="6.6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"></RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

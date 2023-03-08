@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/topRelativeLayout"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_centerInParent="true"
+                android:id="@+id/btnTimeOrder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/sweet_btn_shape"
+                android:drawableLeft="@drawable/ic_descending_sort"
+                android:drawableRight="@drawable/ic_schedule"
+                android:gravity="center"
+                android:text="زمان سفارش را انتخاب کنید"
+                android:textColor="@color/startblue"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <iammert.com.expandablelib.ExpandableLayout
+            android:layout_below="@+id/topRelativeLayout"
+            android:id="@+id/Order_ExpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            app:parentLayout="@layout/order_parent_item"
+            app:childLayout="@layout/order_child_item"/>
+
+        <iammert.com.expandablelib.ExpandableLayout
+            android:layout_below="@+id/topRelativeLayout"
+            android:id="@+id/Order_ExpandableLayoutFilter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="7dp"
+            app:parentLayout="@layout/order_parent_item"
+            app:childLayout="@layout/order_child_item"/>
+
+
+
+    </RelativeLayout>
+
+</ScrollView>
